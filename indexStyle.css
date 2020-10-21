@@ -16,10 +16,6 @@ body {
 
 /* Header Styles */
 
-header {
-    display: flex;
-}
-
 .logo {
     margin: 30px;
     position: relative;
@@ -122,8 +118,49 @@ input[type="search"] {
     grid-template-rows: auto;
 }
 
+.cell {
+    margin: 5px;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: #444444;
+}
+
+.gallery:hover,
+.services:hover,
+.order:hover {
+    background-color: #2b2b2b;
+}
+
 main {
     background-color: var(--color-bg);
     border: var(--border);
     border-radius: 10px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+main h1,
+h2 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+main h1 {
+    text-decoration: underline solid;
+}
+
+
+/* Footer Styles */
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-bg);
+    border: var(--border);
+    border-radius: 10px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+footer p {
+    color: var(--color-text);
+    padding: 5px;
 }
