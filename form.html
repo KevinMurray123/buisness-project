@@ -1,20 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="">
+    <meta name="author" content="Kevin Murray">
     <!--^^^^THIS IS REQUIRED FOR YOUR GRADES IN THE FUTURE ^^^^-->
-    <meta name="description" content="">
+    <meta name="description" content="The order page for The Peck Company. Where we sell rubber ducks at very low and reasonable prices">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:image" content="" type="image/x-icon">
-    <meta property="og:description" content="My">
-    <meta property="og:title" content="">
+    <meta property="og:description" content="The order page for the peck company">
+    <meta property="og:title" content="The Peck Company">
 
-    <title>Boiler Plate</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel ="shortcut icon" href="" type="image/x-icon">
+    <title>The Peck Company</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
+
 <body>
+    <!-- logo -->
+
+    <header>
+        <div class="logo"><img src="images/placeholderlogo.png" alt="" width=300px height=100px></div>
+    </header>
+
+    <!-- Nav Bar -->
+
+    <nav>
+        <ul>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="form.html">Order</a>
+            </li>
+        </ul>
+
+        <form>
+            <input type="search" name="query" placeholder="Search Site">
+            <button class="submit"></button>
+        </form>
+    </nav>
+
+    <!-- Main -->
+
+    <main>
+
+        <form action="" method="POST">
+            <h1>Payment Form</h1>
+            <p>Required fields will have an <strong><abbr title="required"></abbr></strong></p>
+            <section>
+                <h3>Contact Information</h3>
+                <fieldset>
+                    <legend>Title</legend>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <label for="title_1">
+                        <input type="radio" id="title_1" name="title" value="A">
+                        Duke
+                        </label>
+                        </li>
+                        <li>
+                            <label for="title_2">
+                        <input type="radio" id="title_2" name="title" value="A">
+                        Bishop
+                        </label>
+                        </li>
+                        <li>
+                            <label for="title_3">
+                        <input type="radio" id="title_3" name="title" value="A">
+                        Count
+                        </label>
+                        </li>
+                    </ul>
+
+            </section>
+
+            </fieldset>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+
+                    <li>
+                        <label for="mail">E-Mail</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </li>
+
+                    <li>
+                        <label for="msg">Special Requests</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+
+                    <li>
+                        <label for="name">Name</label>
+                        <button type="submit">Send your message
+                            </button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
 </body>
+
 </html>
