@@ -15,6 +15,10 @@ body {
     background-size: cover;
 }
 
+h1 {
+    color: var(--color-text);
+}
+
 
 /* boxes */
 
@@ -24,11 +28,14 @@ body {
     grid-template-rows: auto;
     margin: 0 auto;
     max-width: 85rem;
-    grid-template-areas: ". . wwd wwd . ." ". . wwd wwd . ." ". prices prices prices prices ." ". prices prices prices prices ." ". prices prices prices prices ." ". review review review review ." ". review review review review .";
+    grid-template-areas: ". . wwd wwd . ." ". . wwd wwd . ." ". prices prices prices prices ." ". prices prices prices prices ." ". prices prices prices prices ." ". testemonials testemonials testemonials testemonials ." ". testemonials testemonials testemonials testemonials .";
 }
 
+
+/* What We Do */
+
 .wwd {
-    background-color: var(--color-bg);
+    background-color: #444444;
     display: grid;
     grid-area: wwd;
     text-align: center;
@@ -38,7 +45,12 @@ body {
     padding: 1rem;
     border: var(--border);
     margin-top: 5px;
+    border-radius: 5px;
+    color: var(--color-text);
 }
+
+
+/* Prices */
 
 .prices {
     display: grid;
@@ -57,7 +69,8 @@ body {
     padding: 2rem 1.5rem;
     border: var(--border);
     width: auto;
-    background-color: var(--color-bg);
+    background-color: #444444;
+    border-radius: 5px;
 }
 
 .prices .description {
@@ -68,6 +81,9 @@ body {
 .starters .price {
     margin-top: 1rem;
 }
+
+
+/* Prices Items */
 
 .name {
     text-align: center;
@@ -80,17 +96,51 @@ body {
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
+    color: var(--color-text);
+    text-decoration: overline;
 }
 
 .description {
     text-align: center;
     flex-grow: 1;
+    color: var(--color-text);
+    text-decoration: underline;
     overflow: hidden;
 }
 
 .article {
     display: grid;
     align-items: center;
+}
+
+.testemonials {
+    background-color: #444444;
+    display: grid;
+    grid-area: testemonials;
+    text-align: center;
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    padding: 1rem;
+    border: var(--border);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.testemonials .reviews {
+    margin: 3px;
+}
+
+.testemonials .reviews p {
+    color: var(--color-text);
+}
+
+.testemonials .reviews p::after {
+    content: '"';
+}
+
+.testemonials .reviews p::before {
+    content: '"';
 }
 
 
