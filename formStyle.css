@@ -18,12 +18,12 @@ body {
 
 .container2{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(5, auto);
     grid-template-rows: auto;
 }
 
 .logoCell{
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
 }
 .logoCell img{
