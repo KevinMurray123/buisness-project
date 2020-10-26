@@ -90,25 +90,23 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
     /* Header Styles */
-    header{
-        display: flex;
-    }
-    header a{
-        display: flex;
-        margin: 30px;
-        /* position: relative;
-        left: 18vw; */
-        align-items: center;
-        justify-content: center;
-        height: 30%;
-        width: 30%;
+
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
     }
 
-    header img{
-        justify-content: center;
+    .logoCell{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .logoCell img{
         width: 100%;
-        height: 100%;
+        Width: 100%;
+
     }
 
     /* Nav bar Styles */
